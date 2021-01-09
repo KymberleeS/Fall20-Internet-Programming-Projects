@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF=8">
+    <title>Checkout and Processing</title>
+    <head>
+        <link href="../css/mySite.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+
+    <!--Page Title-->
+    <h2 id="project2header">Enter Payment Information</h2>
+
+    <!--Card Images-->
+    <table>
+        <tr>
+            <td><img src="./images/AmEx.png" class="cards"></td>
+            <td><img src="./images/Discover.png" class="cards"></td>
+            <td><img src="./images/MasterCard.png" class="cards"></td>
+            <td><img src="./images/Visa.png" class="cards"></td>
+        </tr>
+    </table>
+
+    <!--Payment Form-->
+    <form onSubmit="return validateForm();">
+        <label for="firstName">First Name:</label> <br>
+        <input type="text" id="firstName" name="firstName" required> <br><br>
+
+        <label for="lastName">Last Name:</label> <br>
+        <input type="text" id="lastName" name="lastName" required> <br><br>
+
+        <label for="emailAddress">Email:</label> <br>
+        <input type="text" id="emailAddress" name="emailAddress" required> 
+        <p class= "errors" id="emailError"></p> <br><br><br>
+
+        <table id="checkoutinfo">
+           <tr>
+                <td>
+                    <label for="address">Address:</label> <br>
+                    <input type="text" id="address" name="address" required> 
+                </td>
+                <td>
+                    <label for="cardname">Name on Card:</label> <br>
+                    <input type="text" id="cardname" name="cardname" required>
+                </td>
+           </tr>
+           <tr>
+               <td>
+                    <label for="city">City:</label> <br>
+                    <input type="text" id="city" name="city" required>
+               </td>
+               <td>
+                    <label for="cardnumber">Card Number:</label> <br>
+                    <input type="text" id="cardnumber" name="cardnumber" required>
+                    <p class= "errors" id="cardnumberError"></p>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                    <select name="states" id="states">
+                        <option value="default" selected>Select State</option>
+                        <option value="alabama">Alabama</option>
+                        <option value="alaska">Alaska</option>
+                        <option value="arizona">Arizona</option>
+                        <option value="arkansas">Arkansas</option>
+                        <option value="california">California</option>
+                        <option value="colorado">Colorado</option>
+                        <option value="connecticut">Connecticut</option>
+                        <option value="delaware">Delaware</option>
+                        <option value="florida">Florida</option>
+                        <option value="georgia">Georgia</option>
+                        <option value="hawaii">Hawaii</option>
+                        <option value="idaho">Idaho</option>
+                        <option value="illinois">Illinois</option>
+                        <option value="indiana">Indiana</option>
+                        <option value="iowa">Iowa</option>
+                        <option value="kansas">Kansas</option>
+                        <option value="kentucky">Kentucky</option>
+                        <option value="louisiana">Louisiana</option>
+                        <option value="maine">Maine</option>
+                        <option value="maryland">Maryland</option>
+                        <option value="massachussetts">Massachussetts</option>
+                        <option value="michigan">Michigan</option>
+                        <option value="minnesota">Minnesota</option>
+                        <option value="mississippi">Mississippi</option>
+                        <option value="missouri">Missouri</option>
+                        <option value="montana">Montana</option>
+                        <option value="nebraska">Nebraska</option>
+                        <option value="nevada">Nevada</option>
+                        <option value="newHampshire">New Hampshire</option>
+                        <option value="newJersey">New Jersey</option>
+                        <option value="newMexico">New Mexico</option>
+                        <option value="newYork">New York</option>
+                        <option value="northCarolina">North Carolina</option>
+                        <option value="northDakota">North Dakota</option>
+                        <option value="ohio">Ohio</option>
+                        <option value="oklahoma">Oklahoma</option>
+                        <option value="oregon">Oregon</option>
+                        <option value="pennsylvania">Pennsylvania</option>
+                        <option value="rhodeIsland">Rhode Island</option>
+                        <option value="southCarolina">South Carolina</option>
+                        <option value="southDakota">South Dakota</option>
+                        <option value="tennessee">Tennessee</option>
+                        <option value="texas">Texas</option>
+                        <option value="utah">Utah</option>
+                        <option value="vermont">Vermont</option>
+                        <option value="virginia">Virgina</option>
+                        <option value="washington">Washington</option>
+                        <option value="westVirginia">West Virginia</option>
+                        <option value="wisconson">Wisconson</option>
+                        <option value="wyoming">Wyoming</option>
+                    </select>
+                    <p class= "errors" id="statesError"></p>
+               </td>
+               <td>
+                    <label for="expirationdate">Expiration Date:</label> <br>
+                    <input type="date" id="expirationdate" name="expirationdate" min="2017-01-01" max="2025-12-31"
+                        value="2020-04-01">
+                    <p class= "errors" id="dateError"></p><br>
+               </td>
+           </tr>
+           <tr> 
+                <td>
+                    <label for="zip">Zip:</label> <br>
+                    <input type="text" id="zip" name="zip" required>
+                    <p class= "errors" id="Zip"></p>
+                </td>
+                <td>
+                    <label for="cvc"><a href="https://en.wikipedia.org/wiki/Card_security_code" target="_blank">
+                        CVV2/CVC:</a></label> <br>
+                    <input type="text" id="cvc" name="cvc" required>
+                    <p class= "errors" id="Security Code"></p>
+                </td>
+           </tr>
+        </table>
+
+        <br><br>
+
+        <input type="image" src="./images/PayNow.png" alt="Submit" id="pay"><br><br>
+        <button type="reset" onclick="window.location.reload()">Restart Payment Process</button>
+    </form>
+
+    <br><br>
+
+    <!--Navigation-->
+    <p>
+        Navigate to ePortfolio here:
+        <ul>
+            <li><a href="../index.html">ePortfolio</a></li>
+        </ul>
+    </p>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF=8">
+    <title>Online Calculator Page</title>
+    <head>
+        <link href="../css/mySite.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+
+    <!--Page Title-->
+    <h2 id="project3header">Statistical Calculator</h2>
+
+    <!--Calculator Entries-->
+    <form onsubmit="return performStatistics()" id="calculatorEntries">
+        <!--Text area where user inputs numbers-->
+
+        <!--IMPORTANT NOTE ON SPACES: When inputting numbers in textarea, make sure there are NO SPACES AFTER THE LAST NUMBER 
+            typed in.-->
+        <label for="userInput">Input Numbers Here: (use a space to separate)</label> <br>
+        <textarea id="userInput" name="userInput" rows="5" cols="30" required></textarea> <br><br>
+
+        <!--Submit and Reset buttons near the textarea box-->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+        <br><br>
+
+        <!--Read only fields; Where the results show after the user inputs values and submits to perform the calculations-->
+        <label for="max">Max:</label> <br>
+        <input type="text" id="max" name="max" readonly> <br><br>
+
+        <label for="mean">Mean:</label> <br>
+        <input type="text" id="mean" name="mean" readonly> <br><br>
+
+        <label for="median">Median:</label> <br>
+        <input type="text" id="median" name="median" readonly> <br><br>
+
+        <label for="min">Min:</label> <br>
+        <input type="text" id="min" name="min" readonly> <br><br>
+
+        <label for="mode">Mode:</label> <br>
+        <input type="text" id="mode" name="mode" readonly> <br><br>
+
+        <label for="stdDev">Standard Deviation:</label> <br>
+        <input type="text" id="stdDev" name="stdDev" readonly> <br><br>
+
+        <label for="sum">Sum:</label> <br>
+        <input type="text" id="sum" name="sum" readonly> <br><br>
+
+        <label for="variance">Variance:</label> <br>
+        <input type="text" id="variance" name="variance" readonly> <br><br>
+    </form>
+
+    <!--Navigation-->
+    <p id="navigation"><a href="../index.html">back to ePortfolio</a></p>
+</html>

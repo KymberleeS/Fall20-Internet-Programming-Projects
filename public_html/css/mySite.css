@@ -1,0 +1,207 @@
+@import "default.css";
+/* DO NOT MODIFY THE @import STATEMENT ABOVE */
+/* You will use this CSS file for each of your projects. Simply add new CSS classes and elements to the end of the file. */
+/* Be careful to keep your selector names unique to avoid collisions, which can cause confusion. */
+
+/* Personal Web Page Styling */
+#aboutme {
+    color: darkorange;
+}
+
+#hobbies {
+    color: indigo;
+}
+
+#education {
+    color: green;
+}
+
+#bachelors {
+    font-weight: bold;
+}
+
+.diploma {
+    font-style: italic;
+}
+
+.homelinks:hover {
+    font-size: 150%;
+}
+
+/* Class Schedule Page Styling */
+.thSchedule, .tdSchedule {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+#schedule {
+    width: 50%;
+    text-align: center;
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+#headers {
+    color: blue;
+    background-color: pink;
+}
+
+.schedulerow {
+    background-color: yellow;
+}
+
+.events {
+    list-style-type: upper-alpha;
+}
+
+/* Account Page Styling - Custom Checkboxes */
+.boxcontainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.boxcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: gray;
+}
+  
+.boxcontainer input:checked ~ .checkmark {
+    background-color: blue;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.boxcontainer input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.boxcontainer .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#programmingExperience {
+    width: 18%;
+}
+
+/* Account Page Styling - Custom Radio Buttons */
+.radiocontainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+.radiocontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+.selected {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: gray;
+    border-radius: 50%;
+}
+  
+.radiocontainer input:checked ~ .selected {
+    background-color: green;
+}
+  
+.selected:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.radiocontainer input:checked ~ .selected:after {
+    display: block;
+}
+  
+.radiocontainer .selected:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Payment Processing Page Styling */
+#project2header {
+    color: darkcyan;
+}
+
+.cards {
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+#checkoutinfo {
+    width: 35%;
+    line-height: 25px;
+}
+
+#pay {
+    cursor: pointer;
+    height: 10%;
+    width: 10%;
+}
+
+.errors {
+    color: red;
+    font-style: italic;
+ }
+
+/* Statistical Calculator Page Styling */
+#project3header {
+    text-align: center;
+}
+
+#calculatorEntries {
+    text-align: center;
+}
+
+#navigation {
+    text-align: center;
+    font-size: 20px;
+}

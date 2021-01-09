@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF=8">
+    <title>Create an Account</title>
+    <head>
+        <link href="../css/mySite.css" rel="stylesheet">
+    </head>
+
+    <!--Create Account Form-->
+    <form action="https://unfinishedbusiness.app/alert.php" method="post">
+        <!--Credential Fields-->
+        <label for="firstName">First Name:</label> <br>
+        <input type="text" id="firstName" name="firstName"> <br><br>
+
+        <label for="lastName">Last Name:</label> <br>
+        <input type="text" id="lastName" name="lastName"> <br><br>
+
+        <label for="email">Email Address:</label> <br>
+        <input type="text" id="email" name="email"> <br><br>
+
+        <label for="classified">Password:</label> <br>
+        <input type="password" id="classifed" name="classified"> <br><br>
+
+        <label for="confirmPassword">Confirm Password:</label> <br>
+        <input type="password" id="confirmPassword" name="confirmPassword"> <br><br><br><br>
+
+        <!--Birth Date-->
+        <label for="birthDate">Birth Date:</label> <br>
+        <input type="date" id="birthDate" name="birthDate" min="1970-01-01" max="2025-12-01"><br><br>
+        
+        <!--Major (radio)-->
+        <p>Major:</p>
+        <label class="radiocontainer" for="ComputerScience"><a href="https://www.unf.edu/ccec/computing/Computer_Science_Program.aspx" 
+            target="_blank">Computer Science</a>
+            <input type="radio" id="ComputerScience" name="major" value="ComputerScience">
+            <span class="selected"></span>
+        </label> 
+
+        <label class="radiocontainer" for="InformationScience"><a href="https://www.unf.edu/ccec/computing/Information_Science_Program.aspx" 
+            target="_blank">Information Science</a>
+            <input type="radio" id="InformationScience" name="major" value="InformationScience">
+            <span class="selected"></span>
+        </label> 
+
+        <label class="radiocontainer" for="InformationSystems"><a href="https://www.unf.edu/ccec/computing/Information_Systems_Program.aspx" 
+            target="_blank">Information Systems</a>
+            <input type="radio" id="InformationSystems" name="major" value="InformationSystems">
+            <span class="selected"></span>
+        </label> 
+        
+        <label class="radiocontainer" for="InformationTechnology"><a href="https://www.unf.edu/ccec/computing/Information_Technology_Program.aspx" 
+            target="_blank">Information Technology</a>
+            <input type="radio" id="InformationTechnology" name="major" value="InformationTechnology">
+            <span class="selected"></span>
+        </label> <br><br>
+
+        <!--Programming Language Experience (checkboxes)-->
+        <p>Programming Language Experience:</p>
+        <table id="programmingExperience">
+            <tr>
+                <td>
+                    <label class="boxcontainer" for="C"><a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">
+                        C</a>
+                        <input type="checkbox" id="C" name="C">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="boxcontainer" for="PHP"><a href="https://en.wikipedia.org/wiki/PHP" target="_blank">
+                        PHP</a>
+                        <input type="checkbox" id="PHP" name="PHP">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="boxcontainer" for="C#"><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" 
+                        target="_blank">C#</a>
+                        <input type="checkbox" id="C#" name="C#">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="boxcontainer" for="Python"><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" 
+                        target="_blank">Python</a>
+                        <input type="checkbox" id="Python" name="Python">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="boxcontainer" for="Java"><a href="https://en.wikipedia.org/wiki/Java_(programming_language)" 
+                        target="_blank">Java</a>
+                        <input type="checkbox" id="Java" name="Java">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="boxcontainer" for="VisualBasic"><a href="https://en.wikipedia.org/wiki/Visual_Basic" target="_blank">
+                        Visual Basic</a>
+                        <input type="checkbox" id="VisualBasic" name="VisualBasic">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="boxcontainer" for="JavaScript"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
+                        JavaScript</a>
+                        <input type="checkbox" id="JavaScript" name="JavaScript">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="boxcontainer" for="Other">Other
+                        <input type="checkbox" id="Other" name="Other">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <br><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+        <!--After Submission-->
+        <input type="hidden" name="username" value="304513639">
+        <input type="hidden" name="to_email_address" value="n01364866@unf.edu">
+        <input type="hidden" name="to_display_name" value="Kymberlee Sables">
+    </form>
+    <br><br>
+
+     <!--Navigation-->
+     <p>
+        Navigate to other pages here:
+        <ul>
+            <li><a href="./index.html">Personal Web Page</a></li>
+            <li><a href="../index.html">ePortfolio</a></li>
+        </ul>
+    </p>
+</html>

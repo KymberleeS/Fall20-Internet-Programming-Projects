@@ -1,0 +1,79 @@
+/* This CSS code styles the ePortfolio web page */
+div._main_header {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+span._main_header {
+	color: #ffffff;
+	font-size: 250%;
+}
+
+span._body_text {
+    font-size: 150%;
+}
+
+p._bubble {
+	position: relative;
+	background-color: #33F1FF;
+	padding: 1.125em 1.5em;
+	font-size: 1.25em;
+	border-radius: 1rem;
+	box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+p._bubble-top {
+	max-width: 25em;
+	margin: 0 auto;
+	position: relative;
+	background-color: #33F1FF;
+	padding: 1.125em 1.5em;
+	font-size: 1.25em;
+	border-radius: 1rem;
+	box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+p._bubble-left {
+	max-width: 20em;
+	position: relative;
+	background-color: #33F1FF;
+	padding: 1.125em 1.5em;
+	font-size: 1.25em;
+	border-radius: 1rem;
+	box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+p._bubble-top::before {
+	bottom: 100%;
+	left: 1.5em;
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: .75rem solid transparent;
+	border-top: none;
+
+	border-bottom-color: #33F1FF;
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+
+p._bubble-left::before {
+	bottom: 45%;
+	transform: rotate(-90deg);
+	left: -0.87em;
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: .75rem solid transparent;
+	border-top: none;
+
+	border-bottom-color: #33F1FF;
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+
+div._bubble-div {
+	display: none;
+}
